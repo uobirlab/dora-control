@@ -22,7 +22,7 @@
   <include file="$(find rocs_robot)/launch/laser_hokuyo.launch"/>
 
 <!--- Prosilica camera --> 
-  <include file="$(find rocs_robot)/launch/prosilica_camera.launch"/>
+  <!--- include file="$(find rocs_robot)/launch/prosilica_camera.launch"/ -->
 
 <!--- Laser --> 
   <include file="$(find rocs_robot)/launch/usb_camera.launch"/>

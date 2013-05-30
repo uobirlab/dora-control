@@ -8,7 +8,7 @@
 	<param name="use_rep_117" type="bool" value="true"/>
 
 	<!-- Set the port to connect to here -->
-	<param name="port" type="string" value="/dev/ttyACM3"/>
+	<param name="port" type="string" value="/dev/ttyACM0"/>
 
 	<param name="intensity" type="bool" value="false"/>
 
