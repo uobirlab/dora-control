@@ -18,3 +18,9 @@ There are a number of packages not in the main ros library that are required for
 ROSARIA is not part of the standard ROS library and takes a little extra work to install, all instructions can be found at http://www.ros.org/wiki/ROSARIA/Tutorials/How%20to%20use%20ROSARIA
 
 
+=======
+dora-control
+============
+
+Ros drivers to control dora
+
