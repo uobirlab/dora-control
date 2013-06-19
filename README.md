@@ -19,8 +19,4 @@ ROSARIA is not part of the standard ROS library and takes a little extra work to
 
 
 =======
-dora-control
-============
-
-Ros drivers to control dora
 

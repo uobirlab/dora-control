@@ -26,8 +26,8 @@ cost_scaling_factor: 10.0
 lethal_cost_threshold: 100
 
 #Configuration for the sensors that the costmap will use to update a map
-observation_sources: base_scan
+observation_sources: scan
 
-base_scan: {sensor frame: base_laser_link, data_type: LaserScan, expected_update_rate: 1.5, observation_persistence: 0.0, marking: true, clearing: true}
+scan: {sensor frame: base_laser_link, data_type: LaserScan, expected_update_rate: 1.5, observation_persistence: 0.0, marking: true, clearing: true}
 
 
