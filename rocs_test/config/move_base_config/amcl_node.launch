@@ -6,7 +6,7 @@
 -->
 
 <node pkg="amcl" type="amcl" name="amcl" respawn="true">
-  
+   <!-- <remap from="scan" to="base_scan" /> -->
 
   <!-- Set initial position -->
   <param name="initial_pose_x" value="50"/>

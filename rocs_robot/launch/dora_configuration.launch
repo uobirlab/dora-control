@@ -5,9 +5,9 @@
   <include file="$(find rocs_robot)/launch/rosaria.launch"/>
 
 
-<!--- Teleoperation -->
+<!--- Teleoperation 
 <include file="$(find rocs_teleop)/launch/joystick.launch"/>
-
+-->
 <!--- Transformation 
   <node pkg="ROSARIA" type="transform" name="transform" output="screen"/>
 -->
@@ -16,7 +16,7 @@
 	<node pkg="tf" type="static_transform_publisher" name="base_link_to_laser" args="0.224 0 0.125 0 0 0 base_link laser 100" />
 
 <!-- publish the static transform from the center of the robot to the kinect (required for rgdbslam)  -->
-	<node pkg="tf" type="static_transform_publisher" name="odom_to_camera" args="0.2 0 1.20 0 0 0 base_link camera_depth_frame 100" />
+	<node pkg="tf" type="static_transform_publisher" name="odom_to_camera" args="0.2 0 1.20 0 0 0 base_link camera_link 100" />
 
 
 <!--- Laser --> 
