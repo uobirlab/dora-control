@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<launch>
+
+
+
+<include file="$(find rocs_robot)/launch/dora_configuration.launch"/>
+
+<include file="$(find rocs_teleop)/launch/joystick.launch"/>
+
+
+<!--- kinect -->
+  <include file="$(find openni_launch)/launch/openni.launch"/>
+  
+<!-- throttle and voxel reduction of point cloud -->
+
+  <include file="$(find rocs_robot)/launch/voxel.launch" />
+
+
+<!--- AMLC  -->
+  <include file="$(find rocs_test)/config/move_base_config/amcl_node.launch"/> 
+
+ <!--- <remap from="base_scan" to="scan" /> -->
+
+<!--- Gmapping -->
+  <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen" />
+
+<!-- Move_base -->
+  <include file="$(find rocs_test)/config/move_base_config/move_base.launch"/>
+
+
+
+
+ <!---
+<node pkg="tf" type="static_transform_publisher" name="camera_to_base4" args="0 0 0 0 0 0 /camera_depth_frame /canera_link 1"/> 
+
+<node pkg="tf" type="static_transform_publisher" name="camera_to_base5" args="0 0 0 0 0 0 /camera_depth_frame /canera_rgb_frame 1"/> 
+
+<node pkg="tf" type="static_transform_publisher" name="camera_to_base6" args="0 0 0 0 0 0 /camera_depth_frame /canera_rgb_optical_frame 1"/> 
+
+-->
+
+</launch>

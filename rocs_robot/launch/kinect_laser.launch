@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+
+	<include file="$(find openni_launch)/launch/openni.launch"/>
+
+  <!--	<node pkg="depthimage_to_laserscan" name="kinect_to_laser" type="depthimage_to_laserscan" args="image:=/camera/depth/image">
+		 <param name="max_height" value="1.5"/>
+    		<param name="min_height" value="-0.5"/>
+                <param name="scan_time" value="0.2"/>
+	</node> -->
+
+</launch>
