@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package>
+  <name>rocs_robot</name>
+  <version>0.0.0</version>
+  <description>The rocs_robot package</description>
+  <maintainer email="pronobis@cs.washington.edu">Andrzej Pronobis</maintainer>
+
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>camera1394</build_depend>
+  <build_depend>hokuyo_node</build_depend>
+  <build_depend>rocs_teleop</build_depend>
+  <build_depend>rosaria</build_depend>
+  <run_depend>camera1394</run_depend>
+  <run_depend>hokuyo_node</run_depend>
+  <run_depend>rocs_teleop</run_depend>
+  <run_depend>rosaria</run_depend>
+
+
+  <export>
+    <rosdoc config="rosdoc.yaml" />
+  </export>
+
+</package>
