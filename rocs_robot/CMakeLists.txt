@@ -4,7 +4,7 @@ project(rocs_robot)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS camera1394 hokuyo_node rocs_teleop rosaria)
+# find_package(catkin REQUIRED COMPONENTS camera1394 rocs_teleop rosaria)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
