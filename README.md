@@ -23,8 +23,7 @@ You then also need to compile the following from source in a catkin workspace (s
 - git: {local-name: dora-control, uri: 'https://github.com/uobirlab/dora-control.git'}
 ```
 
-
-
-
 =======
+
+runFirst.launch is used to generate the SLAM map and run.launch is used with an existing map.
 
