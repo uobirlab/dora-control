@@ -9,17 +9,21 @@ This is taken from https://github.com/pronobis/rocs-ros with small modifications
 
 ========
 
-There are a number of packages not in the main ros library that are required for use, these are
+You need to make sure you have the following, usually available from a main ROS distr:
 1. joystick_drivers
 2. laser_drivers
 3. camera_drivers
-4. ROSARIA
-5. wu_ptu
 
-ROSARIA is not part of the standard ROS library and takes a little extra work to install, all instructions can be found at http://www.ros.org/wiki/ROSARIA/Tutorials/How%20to%20use%20ROSARIA
 
-wu_ptu is for control of the pan tilt unit, and it's svn location is
-http://wu-robotics.googlecode.com/svn/trunk/wu_ptu/ . I had to move around some of the files to make sure they are found by my install.
+You then also need to compile the following from source in a catkin workspace (suggested src/.rosinstall file contents):
+
+```
+- git: {local-name: rosaria, uri: 'https://github.com/amor-ros-pkg/rosaria.git'}
+- git: {local-name: wu_ptu, uri: 'https://github.com/uobirlab/wu_ptu.git'}
+- git: {local-name: dora-control, uri: 'https://github.com/uobirlab/dora-control.git'}
+```
+
+
 
 
 =======
