@@ -13,7 +13,7 @@ You need to make sure you have the following, usually available from a main ROS 
 1. joystick_drivers
 2. laser_drivers
 3. camera_drivers
-
+4. openni-launch
 
 You then also need to compile the following from source in a catkin workspace (suggested src/.rosinstall file contents):
 

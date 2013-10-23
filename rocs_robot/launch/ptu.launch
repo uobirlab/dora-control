@@ -4,7 +4,7 @@
 		
 	</node> -->
 	<node name ="ptu_move" pkg="rocs_robot" type="ptu.py" output="screen" args="0 -45"/>
-	<include file="$(find ptu46)/ptu46_actions.launch"/>
+	<include file="$(find ptu46)/launch/ptu46_actions.launch"/>
 
 
 	
