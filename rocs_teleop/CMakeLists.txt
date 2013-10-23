@@ -13,3 +13,16 @@ add_executable(rocs_teleop_joystick src/joy.cpp)
 target_link_libraries(rocs_teleop_joystick
   ${catkin_LIBRARIES}
 )
+
+
+## catkin specific configuration ##
+###################################
+## The catkin_package macro generates cmake config files for your package
+## Declare things to be passed to dependent projects
+## LIBRARIES: libraries you create in this project that dependent projects also need
+## CATKIN_DEPENDS: catkin_packages dependent projects also need
+## DEPENDS: system dependencies of this project that dependent projects also need
+catkin_package(
+   CATKIN_DEPENDS geometry_msgs joy roscpp 
+#  DEPENDS system_lib
+)
