@@ -27,7 +27,9 @@ sudo dpkg -i ~/Downloads/libaria_2.8.0+ubuntu12+gcc4.6_amd64.deb
 
 Or follow [the ROSARIA install instructions](http://wiki.ros.org/ROSARIA/Tutorials/How%20to%20use%20ROSARIA) if you have problems.
 
-Note that because we are using catkin, if you are using ROS Groovy you must install the [catkinized navigation stack](https://github.com/ros-planning/navigation/tree/groovy-devel-catkinized). You can do this in you own workspace by adding the following:
+If you are using ROS Groovy note that because we are using catkin, if you want to write software that includes files from the navigation stack you must install the [catkinized navigation stack](https://github.com/ros-planning/navigation/tree/groovy-devel-catkinized). You don't need to do this to *use* the navigation stack, only compile files that reference it directly.
+
+You can do this in you own workspace by adding the following:
 
 ```bash
 wstool set navigation --git https://github.com/ros-planning/navigation -v groovy-devel-catkinized
