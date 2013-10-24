@@ -2,22 +2,24 @@
 <package>
   <name>rocs_robot</name>
   <version>0.0.0</version>
-  <description>The rocs_robot package</description>
-  <maintainer email="pronobis@cs.washington.edu">Andrzej Pronobis</maintainer>
+  <description>Launch files for running the real robot</description>
 
+  <author email="pronobis@cs.washington.edu">Andrzej Pronobis</author>
+  <maintainer email="pronobis@cs.washington.edu">Andrzej Pronobis</maintainer>
 
   <license>BSD</license>
 
   <buildtool_depend>catkin</buildtool_depend>
-  <build_depend>camera1394</build_depend>
-  <build_depend>hokuyo_node</build_depend>
-  <build_depend>rocs_teleop</build_depend>
-  <build_depend>rosaria</build_depend>
+  
   <run_depend>camera1394</run_depend>
   <run_depend>hokuyo_node</run_depend>
   <run_depend>rocs_teleop</run_depend>
   <run_depend>rosaria</run_depend>
-
+  <run_depend>rocs_test</run_depend>
+  <run_depend>openni_launch</run_depend>
+  <run_depend>move_base</run_depend>
+  <run_depend>map_server</run_depend>
+  <run_depend>gmapping</run_depend>
 
   <export>
     <rosdoc config="rosdoc.yaml" />
