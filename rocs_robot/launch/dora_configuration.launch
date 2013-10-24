@@ -3,7 +3,7 @@
 
 
 
-<!--- ROSARIA -->
+<!--- rosaria -->
   <include file="$(find rocs_robot)/launch/rosaria.launch"/>
 
 
@@ -14,7 +14,7 @@
 <include file="$(find rocs_teleop)/launch/joystick.launch"/>
 -->
 <!--- Transformation 
-  <node pkg="ROSARIA" type="transform" name="transform" output="screen"/>
+  <node pkg="rosaria" type="transform" name="transform" output="screen"/>
 -->
 
 <!-- publish the static transform from the center of the robot to the laser rangefinder (required for slam_gmapping) --> 
