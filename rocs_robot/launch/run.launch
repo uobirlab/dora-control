@@ -4,7 +4,7 @@
 
 
 
-<include file="$(find rocs_robot)/launch/dora_configuration.launch"/>
+<include file="$(find rocs_robot)/launch/dora_p2os_configuration.launch"/>
 
 
 <!--- kinect -->
