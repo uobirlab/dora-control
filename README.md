@@ -1,6 +1,8 @@
 Dora ROS components
 ========
 
+For a simplified set of instructions and launch files, see [dora_launch](http://github.com/uobirlab/dora_launch)
+
 This is a set of ROS components for controlling the dora robot (and other P2DX robots), taken from https://github.com/pronobis/rocs-ros with small modifications made.
 
 # Installation
